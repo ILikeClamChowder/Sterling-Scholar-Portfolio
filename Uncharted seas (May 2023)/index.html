@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Uncharted Seas</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+
+        <style>
+            #boat, #background, #option1, #option2, #startBtn, #title1, #stats, #eventMsg, #eventItems #pirate {
+                position: absolute;
+            }
+            #option1, #option2, #eventMsg {
+                background-color: rgba(0, 0, 0, 0.534);
+                border-radius: 50px;
+                color:white;
+                text-align: center;
+                font-size:50px;
+                position: absolute;
+                font-family: 'Darumadrop One', 'cursive';
+                padding: 10px;
+            }
+            #startBtn,.p{
+                font-family: 'Permanent Marker', 'cursive';
+                color: rgb(255, 255, 255);
+                background: none;
+                border-radius: 50px;
+                text-align: center;
+                line-height: 0px;
+                border-color: transparent;
+            }
+            #startBtn:hover{
+                color: rgb(44, 219, 44);
+            }
+            #title1{
+                font-family: 'Permanent Marker', 'cursive';
+                color: rgb(255, 255, 255);
+                border-radius: 50px;
+                text-align: center;
+               
+            }
+            #boat {
+                background-image: url(images/boat.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: 50%;
+            }
+            #infection {
+                background-image: url(images/Infection.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: 50%;
+            }
+            #woman {
+                background-image: url(images/Woman.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: 50%;
+            }
+            #revolt {
+                background-image: url(images/Revolt.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: 50%;
+            }
+            #pirates {
+                background-image: url(images/Pirates.png);
+                z-index: -999;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: 46%;
+            }
+            #captain {
+                background-image: url(images/Captain.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-top: 30px;
+                background-position: 49.5%;
+            }
+            .body {
+                overflow: hidden;
+            }
+            #background {
+               z-index: -999;
+               background-image: url(images/bg.jpg);
+            }
+            #storm {
+               z-index: -999;
+               background-image: url(images/storm.jpg);
+               margin-left: -8px;
+               margin-top: -8px
+            }
+            #sharkBackground {
+               z-index: -998;
+               background-image: url(images/NewPiskel.png);
+               background-size: contain;  
+            }
+            #hungry {
+               z-index: -998;
+               background-image: url(images/Hungry.png);
+               background-size: contain;
+            }
+            #mystery {
+                background-size: contain;
+                background-image: url(images/Mystery.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 250px;
+                margin-top: -40px;
+            }
+            #island {
+                background-size: contain;
+                background-image: url(images/island.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 250px;
+                margin-top: -40px;
+            }
+            #box {
+                background-size: contain;
+                background-image: url(images/Box.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 100px;
+                margin-top: 150px;
+            }
+            #shortcuts {
+                background-size: contain;
+                background-image: url(images/Shortcut.png);
+                margin-top: 220px;
+                background-position-x: 70%;
+                background-repeat: no-repeat;
+            }
+            #fog {
+                width: 100px; /* Set the width of the fog element */
+                height: 100px; /* Set the height of the fog element */
+                background-image: url(images/fog.png);
+                background-repeat: repeat-x;
+                margin-left: -8px;
+                margin-top: -10px
+            }
+            #start {
+                z-index: 999;
+            }
+            #stats {
+                color: white;
+                background-color: rgba(0, 0, 0, 0.534);
+                border-bottom-right-radius: 50px;
+                margin: 4px, 4px, 4px, 4px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                text-align: justify;
+                direction: rtl;
+            }
+            .center {
+                text-align: center;
+                font-family: 'Darumadrop One', 'cursive';
+            }
+            .stat {
+                font-family: 'Darumadrop One', 'cursive';
+                direction: ltr;
+                padding-left: 10px;
+            }
+            #startBtnImg:hover {
+                filter: brightness(50%) sepia(100) saturate(100) hue-rotate(25deg);
+            }
+            body {
+            overflow: hidden; /* Hide any content outside the viewport */
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="stats">
+            <h1><strong>Stats</strong></h1>
+
+
+        </div>
+        <div id="boat"></div>
+        <div id="storm"></div>
+        <div id="infection"></div>
+        <div id="woman"></div>
+        <div id="revolt"></div>
+        <div id="background"></div>
+        <img id="title1" src="images/title.png">
+        <div id="sharkBackground"></div>
+        <div id="pirates" src="images/Pirates.png"></div>
+        <div id="captain"></div>
+        <div id="fog"></div>
+        <div id="mystery"></div>
+        <div id="island"></div>\
+        <div id="hungry"></div>
+        <div id="eventMsg"></div>
+        <div id="eventItems"></div>
+        <div id="box"></div>
+        <div id="shortcuts"></div>
+        <button type="button" id="startBtn"><img id="startBtnImg" src="images/start.png"></button>
+        <button type="button" id="option1"></button>
+        <button type="button" id="option2"></button>
+
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
