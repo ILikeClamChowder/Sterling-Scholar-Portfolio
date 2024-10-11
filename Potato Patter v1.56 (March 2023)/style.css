@@ -1,0 +1,93 @@
+button {
+    border-radius: 50px;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: larger; 
+}
+button:hover {
+    color: rgb(214, 171, 0);
+    text-shadow: rgb(214, 171, 0) 1px 0 10px;
+}
+
+.potatopng:hover {
+    height: auto;
+    opacity: 90%;
+}
+#potatopng {
+    border-radius: 200px;
+    filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
+
+}
+
+/*scrollbar*/
+.scrollbar
+{
+	background-color: rgba(255, 255, 255, 0.658);
+	overflow-y: scroll;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+
+}
+
+
+.scrollGroup {
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+.scrollGroup2 {
+    height: 200px;
+    width: 200px;
+
+}
+
+body {
+    
+    background: url("images/idahoblur.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    text-align: center;
+    left: 10px;
+    right: 10px;
+    top: .1px;
+    bottom: 10px;
+    overflow-x: hidden;
+    
+}
+
+.title , #statsDiv {
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+    background-color: rgba(255, 255, 255, 0.658);
+}
+
+.transactionFailed {
+    color: rgb(255, 0, 0);
+    text-shadow: rgb(255, 0, 0) 1px 0 10px;
+}
+
+.transactionWorked {
+    color: rgb(0, 196, 10);
+    text-shadow: rgb(0, 196, 10) 1px 0 10px;
+}
+
+.storeBtn {
+    background-color: #7070709f;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#potatoBtn {
+    width: 600px;
+    border-radius: 999px;
+
+}
